@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/24/user/937857).
-* Наставник: `Неизвестно`.
+* Студент: [Вика Станкевич](https://up.htmlacademy.ru/htmlcss/24/user/937857).
+* Наставник: [Михаил Кононенко](https://htmlacademy.ru/profile/id30979).
 
 ---
 
