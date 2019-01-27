@@ -1,64 +1,43 @@
-<! DOCTYPE html>
-<html lang="ru">
-    <head>
-    <meta>
-    <meta>
-        <link rel="stylesheet" type="text/css" href="sedona.css">
-        <link href="" rel="stylesheet">
-        <title>City of Sedona</title>
-    </head>
-    <body>
-    <header>
-        <nav class="main-navigation">
-        <ul class="">
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и Видео</a></li>
-           <a class="header-logo" href=""><img src="" width="" height="" alt="logo"></a>
-            <li><a href="">Карта Штата</a></li>
-            <li><a href="">Гостиницы</a></li>
-            </ul>
-        </nav>
-        <img src="" alt="background">
-        </header>
-        <main>
-            <h1 class="visially-hidden"></h1>
-        <section class="description-of-sedona">
-            <h2>Седона — небольшой городок в Аризоне,
-заслуживающий большего!</h2>
-            <h3>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h3>
-            <div class="natural-sedona"></div>
-            <ul class="three-reasons">
-            <li class="reason"></li>
-            <li class="reason"></li>
-            <li class="reason"></li>
-            </ul>
-            <div class="present-sedona"></div>
-            <ul class="six-reasons">
-            <li class="reason"></li>
-            <li class="reason"></li>
-            <li class="reason"></li>
-            </ul>
-            </section>
-            <section class="interest">
-            <h2>Заинтересовались?</h2>
-                <h3>Укажите предполагаемые даты поездки, 
-и мы покажем вам лучшие предложения гостиниц в седоне</h3>
-                <span class="map"></span>
-            </section>
-            <footer class="main-footer">
-                <p><a href="">#VISITSEDONA</a></p>
-                    <div class="fotter-social">
-        <ul>
-       <li><a class="social-button" href="">Twwiter</a></li>
-       <li><a class="social-button" href="">Facebook</a></li>
-       <li><a class="social-button" href="">Youtube</a></li>
-        </ul>
-    </div>
-                <p class="footer-copyrigth">
-                <a href=""><img src="" alt=""></a>
-                </p>
-            </footer>
-            
-             </main>
-    </body>
-    </html>
+# Личный проект «Седона»
+
+* Студент: [Вика Станкевич](https://up.htmlacademy.ru/htmlcss/24/user/937857).
+* Наставник: [Михаил Кононенко](https://htmlacademy.ru/profile/id30979).
+
+---
+
+_Не удаляйте и не обращайте внимание на файлы:_<br>
+_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
+
+---
+
+### Памятка
+
+#### 1. Зарегистрируйтесь на Гитхабе
+
+Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+
+#### 2. Создайте форк
+
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/937857-sedona-24) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
+
+Получится вот так:
+
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037953-6a8a7384-7bae-11e7-83ac-59603b1d696c.jpg">
+
+#### 3. Клонируйте репозиторий на свой компьютер
+
+Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
+
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037955-6c20c16c-7bae-11e7-9e1a-c52010042976.jpg">
+
+Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+
+#### 4. Начинайте обучение!
+
+---
+
+<a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
+
+Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 1](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
