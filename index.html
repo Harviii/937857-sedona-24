@@ -19,7 +19,7 @@
             </ul>
         </nav>
         <p>
-        <img src="" alt="background">
+        <img src="img/background.jpg" width="1200" height="565" alt="background">
             </p>
         </header>
         <main>
@@ -69,7 +69,9 @@
             <h2>Заинтересовались?</h2>
                 <h3>Укажите предполагаемые даты поездки, 
 и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
-                <span class="map"></span>
+                <p>
+                <img src="img/map.jpg" alt="Карта города">
+                </p>
             </section>
             <footer class="main-footer">
                 <p><a href="">#VISITSEDONA</a></p>
@@ -85,16 +87,17 @@
             <section class="popap">
             <h2></h2>
                 <div class="search-of-hotel">
-                <form action="" method="post">
-                    <label>Дата заезда:</label>
-                <input><br>
-                    <label>Дата выезда:</label>
-                <input><br>
-                    <label>Взрослые:</label>
-                <input>
-                                        <label>Дети:</label>
-                <input><br>
-                <input type="button" value="Найти">
+                    <button class="search" >Поиск гостницы в Седоне</button> 
+                <form class="" action="http://echo.htmlacademy.ru" method="post">
+                    <label for="data1">Дата заезда:</label>
+                <input type="text" name="text" id="data1" placeholder="24 апреля 2017"><br>
+                    <label for="data2">Дата выезда:</label>
+                <input type="text" name="text" id="data2" placeholder="4 июля 2017"><br>
+                    <label for="senior">Взрослые:</label>
+                <input type="" id="senior">
+                    <label for="child">Дети:</label>
+                <input  type="" id="child"><br>
+                <input type="submit" value="Найти">
                 </form>
                     </div>
             </section>
