@@ -1,36 +1,4 @@
-/* --------------- reset.css --------------- */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;                               /* обнуляем отступы и убираем бордюры */
-	vertical-align: baseline;          /* приводим все к одной базовой линии */
-	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-	font-size: 100%;                     /* размер шрифта всем одинаковый */
-}
-a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
-	margin:0;
-	padding:0;
-	font-size:100%;
-	vertical-align:baseline;
-	background:transparent;
-	outline:none;
-}
-input, select, button, textarea {
-	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
-	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
-	outline: none;
-}
-input[type="text"], input[type="password"], textarea {
-	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display:block;
-}
-nav ul a {
-	 list-style:none;
-}
-/* --------------- /reset.css --------------- */
+
 body{
     margin: 0;
     font-family: "PT Sans", sans-serif;
@@ -38,23 +6,20 @@ body{
     background-color:white;
     text-transform: uppercase;
     }
-header{
-    width: 1200px;
-    height: 565px;
-    background-image:url(img/background.jpg); 
-    }
+ a{
+    color:black;
+}
 .main-navigation{
     font-weight: 700;
     color: black;
     background-color: white;
     }
-.cite-navigation a{
-    color:black;
+.cite-navigation a {
+    color: black;
 }
 .cite-navigation a:hover,
 .cite-navigation a:focus{
-    background-color:white
-    opacity: 25%;
+    background-color: transparent;
 }
 .cite-navigation a:active{
     color: #766357;
@@ -102,7 +67,7 @@ header{
 }
 .interest{
     width: 1200px;
-    height: 295px;
+    height: 765px;
     text-align: center;
 }
 .interest h2{
@@ -114,6 +79,9 @@ header{
     margin-top: 37px;
     margin-bottom: 55px;
 }
+.map{ 
+    position: absolute;
+    }
 .search{
     width:568px;
     height: 88px;
@@ -133,7 +101,7 @@ header{
     background-color: #503e33;
     color: #857871;
 }
-.popap{
+.popup{
     width: 570px;
     height: 395px;
     font-weight: 700;
@@ -160,13 +128,19 @@ header{
 }
 .main-footer{
     width: 1200px;
-    height: 122px;
+    height: 120px;
     color: black;
+    background-color: rgba(255,255,255,0.9);
+    position: relative;
+    top:-53px;
 }
 .main-footer a{
     color: black;
     font-size: 21px;
     font-weight: 700;
+}
+.visually-hidden{
+    display: none;
 }
 
 
