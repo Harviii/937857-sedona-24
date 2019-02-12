@@ -10,13 +10,23 @@ a{
 }
 .main-navigation{
     width: 1200px;
-    height: 120px;
-    margin-bottom: 25px;
+    line-height: 26px;
+}
+.cite-navigation{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.header-logo{
+    position: relative;
+    bottom: -10px;
 }
 .choose{
     width: 1200px;
-    height: 240px; /* -20px */
-    margin-top: 30px;
+    min-height: 220px;
     background-color: cadetblue;
     color: white;
 }
@@ -39,11 +49,20 @@ a{
 }
 .hotel-items{
   width: 1200px;
-  height: 540px;  
+  height: 540px; 
+  margin-bottom: 20px;
     }
-
+.catalog-list{
+    width: 1200px;
+    min-height: 455px;
+    display: flex;
+    flex-direction: column;
+}
+.name-hotel{
+    border: 1px solid #e5e5e5;
+}
 .founding{
-    height: 88px;
+    min-height: 88px;
 }
 .founding h2{
 font-size: 21px;
@@ -91,18 +110,47 @@ color: #88b6d1;
 
 .main-footer{
     width: 1200px;
-    height: 122px;
+    min-height: 40px;
     color: black;
+    background-color:white;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.visit,
+.footer-copyright{
+    width: 240px;
+}
+.visit{
+    margin-right: 90px;
+}
+.footer-copyright{
+    margin-left: auto;
+}
+.footer-social{
+    width: 400px;
 }
 .main-footer a{
     color: black;
     font-size: 21px;
     font-weight: 700;
 }
+.main-footer img{
+    background-color: black;
+    width: 120px;
+    height: 40px;
+}
 .visually-hidden{
     display: none;
 }
-
+.container{
+    width: 1055px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
