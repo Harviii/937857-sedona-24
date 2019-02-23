@@ -8,6 +8,16 @@ a{
     color: black;
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+ul{
+    margin:0;
+}
+button{
+    margin: 0;
+    padding: 0;
+}
 .main-navigation{
     width: 1200px;
     line-height: 26px;
@@ -16,7 +26,7 @@ a{
     height: 56px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -36,8 +46,8 @@ a{
 .choose{
     width: 1200px;
     min-height: 220px;
-    background-color: cadetblue;
     color: white;
+    background-color: antiquewhite;
 }
 .choose h3{
     font-size: 16px;
@@ -45,6 +55,45 @@ a{
 .choose label{
     font-weight: 400;
 }
+.wholeform{
+    background-image: url(filter%20background.jpg);
+    background-repeat: no-repeat;
+    width: 1125px;
+    min-height: 225px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 85px;
+    flex-wrap: wrap;
+}
+.infostructure,
+.type{
+    display: flex;
+    width: 170px;
+    flex-direction: column;
+}
+.infostructure{
+    margin-right: 75px;
+}
+.infostructure h3,
+.type h3{
+    margin-bottom: 25px;
+}
+.cost h3{
+    margin-bottom: 15px;
+}
+.infostructure p,
+.type p{
+    margin-bottom: 25px;
+}
+.type{
+    margin-right:320px;
+}
+.cost{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+    
 .subscribe{
     width: 135px;
     height: 35px;
@@ -55,6 +104,13 @@ a{
     color: white;
     background: transparent;
     border:2px solid white;
+    cursor: pointer;
+    line-height:21px; 
+    margin: 0 auto;
+}
+.subscribe:hover{
+    background-color: white;
+    color: black;
 }
 .hotel-items{
   width: 1200px;
@@ -106,6 +162,14 @@ a{
 }
 .name-hotel a:active{
     color: #b2b2b2;
+}
+.rate p{
+    justify-content: flex-end;
+    font-size: 13px;
+    width: 80px;
+    height: 20px;
+    background-color: #f2f2f2;
+    padding: 5px 15px;
 }
 .founding{
     min-height: 88px;
@@ -233,7 +297,7 @@ margin-left: 150px;
 .footer-copyright p{
     position: relative;
     top:30px;
-    right:80px;
+    right:95px;
     font-size: 14px;
 }
 .logo{
@@ -263,7 +327,7 @@ margin-left: 150px;
     font-size: 21px;
     font-weight: 700;
 }
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -280,9 +344,100 @@ margin-left: 150px;
     margin: 0 auto;
     display: flex;
 }
+.action{
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;   
+}
+.action input[type="checkbox"]:checked + .checkbox{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(checkbox-on.svg);
+    background-repeat: no-repeat;
+    left: 0px;
+    top: -5px;
+}
+.action input[type="checkbox"] + .checkbox{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(checkbox-off.svg);
+    background-repeat: no-repeat;
+    left: 0;
+    top: -5px;
+}
+.price-range{
+    position: relative;
+    height: 36px;
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-size: 0;
+}
+.price-range::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 2px;
+  height: 22px;
+  background: white;
+}
+.price-range label{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    cursor: pointer;
+}
+.min-price,
+.max-price{
+    width: 90px;
+    padding-left: 65px;
+}
+.price-range input{
+    border: none;
+    width: 50px;
+    color: white;
+    background: none;
+    padding-left: 10px;
+}
+.range-control{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.range-control .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-control .bar {
+  width: 80%;
+  height: 2px;
+  background: white;
+}
+.range-button {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
 
-
-
+.range-button:hover {
+  background: #1c4f80;
+}
+.range-button-min {
+  left: 0;
+}
+.range-button-max {
+  left: 80%;
+}
 
 
 

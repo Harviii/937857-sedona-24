@@ -5,7 +5,7 @@
     <meta>
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="css/sedona-hotels.css">
-          <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
         <title>Hotels of Sedona</title>
     </head>
     <body>
@@ -23,31 +23,68 @@
     <main>
         <h1 class="visually-hidden">Выбор отеля</h1>
         <section class="choose">
-        <h2 class="visually-hidden">Фильтр отелей</h2>
-        <form action="http://echo.htmlacademy.ru" method="post">
+            <h2 class="visually-hidden">Фильтр отелей</h2>
+        <form class="wholeform" action="http://echo.htmlacademy.ru" method="post">
             <div class="infostructure">
                 <h3>Инфраструктура:</h3>
-            <label for="pool">Бассейн</label>
-            <input type="checkbox" name="pool" id="pool" checked ><br>
-            <label for="park">Парковка</label>
-<input type="checkbox" name="park" id="park"><br>
-            <lable for="wf">Wi-Fi</lable>
-   <input type="checkbox" name="wifi" id="wf">  
+                <p>
+            <label class="action" for="pool">
+                    <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked >
+                    <span class="checkbox"></span>
+                    Бассейн 
+                    </label>
+                </p>
+                <p>
+            <label class="action">
+                    <input class="visually-hidden" type="checkbox" name="park">
+                <span class="checkbox"></span>
+                Парковка
+                </label>
+                </p>
+                <p>
+            <lable class="action">
+            <input class="visually-hidden" type="checkbox" name="wifi" >  
+                <span class="checkbox"></span>
+                Wi-Fi
+                    </lable>
+                </p>
                 </div>
             <div class="type">
                  <h3>Тип жилья:</h3>
-                <label for="hostel">Гостиница</label>
-                <input type="checkbox" name="hostel" id="hostel" checked><br>
-                <label for="motel">Мотель</label>
-                <input type="checkbox" name="motel" id="motel" checked><br>
-                <label for="apart">Апартаменты</label>
-                <input type="checkbox" name="apart" id="apart" checked><br>
+                <p>
+                    <label class="action">
+                    <input  class="visually-hidden" type="checkbox" name="hostel" checked>
+                        <span class="checkbox"></span>
+                        Гостиница</label>
+                </p>
+                <p>
+                <label class="action">
+                 <input class="visually-hidden" type="checkbox" name="motel" checked>
+                 <span class="checkbox"></span>    
+                    Мотель</label>
+                </p>
+                <p>
+                    <label class="action">
+                     <input  class="visually-hidden" type="checkbox" name="apart"  checked>
+                    <span class="checkbox"></span>  
+                        Апартаменты</label>
+                </p>
             </div>
             <div class="cost">
                 <h3>Стоимость в сутки (Р):</h3>
-                <input type="range" min="0" max="3000" step="50">
+                <div class="price-range">
+        <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-control">
+                <div class="scale">
+                    <div class="bar"></div>
+                    </div>
+                    <div class="range-button range-button-min"></div>
+                    <div class="range-button range-button-max"></div>
+                </div>
+                <button class="subscribe" type="submit">Показать</button>
             </div>
-            <button class="subscribe" type="submit">Показать</button>
             </form>
             </section>
         <section class="hotel-items">
@@ -69,6 +106,9 @@
                 <button class="moreinfo" type="button" >Подробнее</button> 
                 <button class="reserv" type="submit">Забронировать</button>
                     </p>
+                    <div class="rate">
+                        <p>рейтинг:8,5</p>
+                    </div>
                         </div>
                         </div>    
                 </div>    

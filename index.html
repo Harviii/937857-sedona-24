@@ -2,7 +2,6 @@
 <html lang="ru">
     <head>
     <meta charset="utf-8">
-    <meta>
         <link rel="stylesheet" type="text/css" href="reset.css" >
         <link rel="stylesheet" type="text/css" href="css/sedona.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -18,10 +17,8 @@
             <li><a href="">Карта Штата</a></li>
             <li><a href="">Гостиницы</a></li>
             </ul>
-            </nav>
-            <p>
-            <img src="img/background.jpg" width="1200" height="510">
-        </p>
+            </nav> 
+            <img src="img/background.jpg" width="1200" height="510" alt="backgroundimage">
             </header>
         <main>
             <h1 class="visually-hidden">Седона</h1>
@@ -29,41 +26,57 @@
             <h2>Седона — небольшой городок в Аризоне,<br>
 заслуживающий большего!</h2>
             <h3>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h3>
-            <div class="natural-sedona"></div>
+            <div class="natural-sedona">
+                <div class="description">
+            <h4>Настоящий <br>городок</h4>
+            <h5>Cедона — не аттракцион для туристов, там течёт своя жизнь</h5>
+                </div>
+            <img src="img/restor.jpg" alt="restoran" width="800" height="255">    
+            </div>
             <ul class="three-reasons">
-            <li class="reason"> 
+                <div class="container">
+            <li class="reasons"> 
                 <img src="img/house.svg" alt="home">
                 <h4>Жилье</h4>
                 <h5>Рекомендуем пожить в настоящем мотеле, всё как в кино!</h5>
                 </li>
-            <li class="reason">
+            <li class="reasons">
                 <img src="img/burger.svg" alt="burger">
                 <h4>Еда</h4>
                 <h5>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</h5>
                 </li>
-            <li class="reason">
+            <li class="reasons">
                 <img src="img/soivenirs.svg" alt="present">
                 <h4>Сувениры</h4>
                 <h5>Не только китайского, но и местного производства!</h5>
                 </li>
+                </div>
             </ul>
-            <div class="present-sedona"></div>
+            <div class="present-sedona">
+            <img src="img/devil.jpg" alt="most" width="800" height="255">
+                <div class="description">
+                <h4>Там есть <br> мост дьявола</h4>
+                <h5>Да,по нему можно пройти!Если,конечно,вы осмелитесь</h5>
+                </div>
+                </div>
             <ul class="six-reasons">
+                <div class="container">
             <li class="reason">
-                <h4>Небольшая Площадь</h4>
+                <h4>Небольшая <br> Площадь</h4>
                 <h5>Все достопримечательности 
 находятся очень близко</h5>
                 </li>
             <li class="reason">
-                <h4>Красивая Дорога</h4>
+                <h4>Красивая<br> Дорога</h4>
                 <h5>Ехать в Седону из Лас-Вегаса совсем
 не скучно!</h5>
                 </li>
             <li class="reason">
-                <h4>Мало Туристов</h4>
+                <h4>Мало <br>Туристов</h4>
                 <h5>Большинство едет в гранд каньон
 и толпится там</h5>
                 </li>
+                </div>
             </ul>
             </section>
             <section class="interest">
@@ -72,8 +85,7 @@
 и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
                 <button class="search" >Поиск гостницы в Седоне</button>
                 <div class="map">
-                    <img src="img/map.jpg" width="1200";
-    height= "595"; >
+                    <img src="img/map.jpg" width="1200" height="595">
                 </div>
             </section>
             <footer class="main-footer">
@@ -91,22 +103,22 @@
                     </div>
             </footer>
             <section class="popup">
-            <h2></h2>
                 <div class="search-of-hotel">
+            <h2 class="visually-hidden">Поле ввода данных</h2>
                     <div class="popup-container">
-                     <form class="" action="http://echo.htmlacademy.ru" method="post">
+                     <form  action="http://echo.htmlacademy.ru" method="post">
                     <label for="data1">Дата заезда:</label>
-                <input type="text" name="text" id="data1" placeholder="24 апреля 2017"><br>
+                <input class="enter-calender" type="text" name="text" id="data1" placeholder="24 апреля 2017"><br>
                     <label for="data2">Дата выезда:</label>
-                <input type="text" name="text" id="data2" placeholder="4 июля 2017"><br>
+                <input class="exist-calender" type="text" name="text" id="data2" placeholder="4 июля 2017"><br>
                     <label for="senior">Взрослые:</label>
 <!--                <input type="" id="senior">-->
                     <label for="child">Дети:</label>
 <!--                <input  type="" id="child"><br>-->
-                <button class="found" type="submit">Найти</button> 
+                              <button class="found" type="submit">Найти</button>
                 </form>
                     </div>
-                    </div>
+                </div>
             </section>
             </main>
     </body>
