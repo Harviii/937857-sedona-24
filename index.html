@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
     <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="reset.css" >
+        <link rel="stylesheet" type="text/css" href="normalize.css" >
         <link rel="stylesheet" type="text/css" href="css/sedona.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
                 <title>City of Sedona</title>
@@ -11,14 +11,18 @@
     <header>
         <nav class="main-navigation">
         <ul class="cite-navigation">
+            <div class="container">
             <li><a href="">Информация</a></li>
             <li><a href="">Фото и Видео</a></li>
-            <li><a class="header-logo" href=""><img src="img/logo.svg" width="141" height="71" alt="logo"></a></li>
+            <li><a class="header-logo" href=""><img src="img/logo.svg" width="140" height="72" alt="logo"></a></li>
             <li><a href="">Карта Штата</a></li>
             <li><a href="">Гостиницы</a></li>
+            </div>
             </ul>
             </nav> 
-            <img src="img/background.jpg" width="1200" height="510" alt="backgroundimage">
+        <div class="img">
+        <img src="css/intro-welcome.svg" width="459" height="353">
+        </div>
             </header>
         <main>
             <h1 class="visually-hidden">Седона</h1>
@@ -77,13 +81,13 @@
 и толпится там</h5>
                 </li>
                 </div>
-            </ul>
+                    </ul>
             </section>
             <section class="interest">
             <h2>Заинтересовались?</h2>
                 <h3>Укажите предполагаемые даты поездки,<br> 
 и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
-                <button class="search" >Поиск гостницы в Седоне</button>
+                <button class="search" >Поиск гостиницы в Седоне</button>
                 <div class="map">
                     <img src="img/map.jpg" width="1200" height="595">
                 </div>
@@ -108,9 +112,9 @@
                     <div class="popup-container">
                      <form  action="http://echo.htmlacademy.ru" method="post">
                     <label for="data1">Дата заезда:</label>
-                <input class="enter-calender" type="text" name="text" id="data1" placeholder="24 апреля 2017"><br>
+                <input class="enter-calender" type="text" name="text" id="data1" placeholder="24 апреля 2017">
                     <label for="data2">Дата выезда:</label>
-                <input class="exist-calender" type="text" name="text" id="data2" placeholder="4 июля 2017"><br>
+                <input class="exist-calender" type="text" name="text" id="data2" placeholder="4 июля 2017">
                     <label for="senior">Взрослые:</label>
 <!--                <input type="" id="senior">-->
                     <label for="child">Дети:</label>
@@ -121,5 +125,38 @@
                 </div>
             </section>
             </main>
+        <script>
+        var search=document.querySelector(".search");
+        var popup=document.querySelector(".popup");
+        var enter=popup.querySelector(".enter-calender"); 
+        var exist=popup.querySelector(".exist-calender");    
+        var form=popup.querySelector("form");   
+        var inputenter=popup.querySelector(".enter-calender");
+        var inputexist=popup.querySelector(".exist-calender");    
+            search.addEventListener("click", function (evt){
+                evt.preventDefault();
+                popup.classList.toggle("popup-show");
+                enter.focus();
+                inputenter.classList.remove("popup-error");
+                inputexist.classList.remove("popup-error-two");
+                 })  
+            form.addEventListener("submit", function(evt){
+                if(!enter.value || !exist.value){
+                    evt.preventDefault();
+                    inputenter.classList.add("popup-error");
+                    inputexist.classList.add("popup-error-two");
+                }
+            })
+            window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("popup-show")) {
+        popup.classList.remove("popup-show");
+        inputenter.classList.remove("popup-error");  
+        inputexist.classList.remove("popup-error-two");  
+      }
+    }
+            })
+        </script>
     </body>
     </html>
