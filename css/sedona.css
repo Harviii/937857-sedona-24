@@ -26,11 +26,10 @@ ul{
     line-height: 26px;
     }
 .img{
-    background-image:
-        url(background.jpg);
+    background-image: url("b-p.jpg");
     background-repeat: 
         no-repeat;
-     height: 510px;
+    height: 508px;
     background-size: cover;
 }
 .img img{
@@ -39,7 +38,6 @@ ul{
     left: 370px;
 }
 .cite-navigation{
-    margin: 0;
     height: 56px;
     display: flex;
     flex-direction: row;
@@ -48,7 +46,7 @@ ul{
     flex-wrap: wrap;
     
 }
-.cite-navigation li:not(:nth-child(3)){
+.cite-navigation li:not(:nth-child(3)) {
     padding-top: 15px;
 }
 .cite-navigation a {
@@ -56,13 +54,14 @@ ul{
     font-size: 14px;
     line-height: 26px;
 }
+.cite-navigation a:hover,
+.cite-navigation a:focus{
+    color: #669ec0;
+}
 .cite-navigation a:active{
     color: #b2b2b2;
 }
-.cite-navigation li:hover,
-.cite-navigation li:focus{
-    background-color: transparent;
-}
+
 .description-of-sedona {
     text-align: center;
     
@@ -96,14 +95,13 @@ ul{
     font-size: 21px;
     line-height: 21px;
     margin-top: 46px;
-    margin-bottom: 65px;
 }
 .description h5{
     font-family: "PT Sans","Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;   
     font-weight: 400;
-    margin: 0 60px 64px 60px;
+    margin: 0 40px 20px 40px;
 }
 .three-reasons{
     display: flex;
@@ -148,7 +146,6 @@ ul{
     font-family: "PT Sans","Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 60px;
 }
 .reason h5{
     font-family: "PT Sans","Arial", sans-serif;
@@ -232,7 +229,7 @@ ul{
     outline: 2px solid #e5e5e5;
 }
 .search-of-hotel button {
-    margin-top: 55px;
+    margin-top: 45px;
 }
 .enter-calender{
     background-image:url(calendar.svg);
@@ -246,6 +243,32 @@ ul{
     background-repeat: no-repeat;
     cursor: pointer;  
 }
+.plus,
+.minus {
+    display: inline-block;
+    margin: 0;
+    margin-left: 39px;
+}
+.minus {
+    margin-left: 52px;
+}
+.plus button,
+.minus button {
+    margin: 0;
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-right: -4px;
+}
+.plus input,
+.minus input {
+    width: 38px;
+    height: 36px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-right: -4px;
+}
 .found{
     width: 460px;
     min-height: 60px;
@@ -254,7 +277,7 @@ ul{
     border: none;
     font-weight: 600;
     font-size: 21px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
     line-height: 26px;
 }
@@ -351,7 +374,7 @@ ul{
     display: inline-block;
     width: 115px;
     height: 50px;
-     margin-left: -12px;
+    margin-left: -12px;
 }
 .academy{
     background-image: url(logo-htmlacademy.svg);
