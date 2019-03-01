@@ -3,25 +3,25 @@
     <head>
     <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="normalize.css" >
-        <link rel="stylesheet" type="text/css" href="css/sedona.css">
+        <link rel="stylesheet" type="text/css" href="css/sedona-index-hotels.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
                 <title>City of Sedona</title>
     </head>
     <body>
     <header>
         <nav class="main-navigation">
-          <ul class="cite-navigation">
-            <div class="container">
+         <div class="container">
+          <ul class="cite-navigation b">
               <li><a href="">Информация</a></li>
               <li><a href="">Фото и Видео</a></li>
               <li><a class="header-logo" href=""><img src="img/logo.svg" width="140" height="72" alt="logo"></a></li>
               <li><a href="">Карта Штата</a></li>
               <li><a href="">Гостиницы</a></li>
-            </div>
           </ul>
+        </div>     
         </nav> 
         <div class="img">
-          <img src="css/intro-welcome.svg" width="459" height="353">
+          <img src="css/intro-welcome.svg" width="459" height="353" alt="welcomeimg">
         </div>
     </header>
         <main>
@@ -38,25 +38,25 @@
                 </div>
                 <img src="img/restor.jpg" alt="restoran" width="800" height="255">    
               </div>
-              <ul class="three-reasons">
+              <div class="three-reasons">
                 <div class="container">
-                  <li class="reasons"> 
-                    <img src="img/house.svg" alt="home">
+                  <div class="reasons"> 
+                    <img src="img/house.svg" width="75" height="72" alt="home">
                       <h4>Жилье</h4>
                       <h5>Рекомендуем пожить в настоящем мотеле, всё как в кино!</h5>
-                  </li>
-                  <li class="reasons">
-                    <img src="img/burger.svg" alt="burger">
+                  </div>
+                  <div class="reasons">
+                    <img src="img/burger.svg" width="75" height="72" alt="burger">
                     <h4>Еда</h4>
                     <h5>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</h5>
-                  </li>
-                  <li class="reasons">
-                    <img src="img/soivenirs.svg" alt="present">
+                  </div>
+                  <div class="reasons">
+                    <img src="img/soivenirs.svg" width="75" height="72" alt="present">
                     <h4>Сувениры</h4>
                     <h5>Не только китайского, но и местного производства!</h5>
-                 </li>
+                 </div>
                 </div>
-              </ul>
+              </div>
               <div class="present-sedona">
                 <img src="img/devil.jpg" alt="most" width="800" height="255">
                 <div class="description">
@@ -65,28 +65,28 @@
                   <h5>Да,по нему можно пройти!Если,конечно,вы осмелитесь</h5>
                 </div>
              </div>
-             <ul class="six-reasons">
+             <div class="six-reasons">
                 <div class="container">
-                  <li class="reason">
+                  <div class="reason">
                     <h4>Небольшая <br> Площадь</h4>
                     <h5>-№3-</h5>
                     <h5>Все достопримечательности 
 находятся очень близко</h5>
-                  </li>
-                  <li class="reason">
+                  </div>
+                  <div class="reason">
                     <h4>Красивая<br> Дорога</h4>
                     <h5>-№4-</h5>
                     <h5>Ехать в Седону из Лас-Вегаса совсем
 не скучно!</h5>
-                  </li>
-                  <li class="reason">
+                  </div>
+                  <div class="reason">
                     <h4>Мало <br>Туристов</h4>
                     <h5>-№5-</h5>
                     <h5>Большинство едет в гранд каньон
 и толпится там</h5>
-                  </li>
+                  </div>
                 </div>
-            </ul>
+            </div>
           </section>
           <section class="interest">
             <h2>Заинтересовались?</h2>
@@ -94,20 +94,20 @@
 и мы покажем вам лучшие предложения гостиниц в Седоне</h3>
             <button class="search" >Поиск гостиницы в Седоне</button>
             <div class="map">
-               <img src="img/map.jpg" width="1200" height="595">
+               <img src="img/map.jpg" width="1200" height="595" alt="mapimg">
             </div>
         </section>
-        <footer class="main-footer">
+        <footer class="main-footer-a">
           <div class="container">
-            <p class="visit"><a href="">#VISITSEDONA</a></p>
-            <div class="footer-social">
-               <a href="#" class="social tw"></a>
-               <a href="#" class="social fb"></a>
-               <a href="#" class="social ut"></a>
+            <p class="visit-a"><a href="">#VISITSEDONA</a></p>
+            <div class="footer-social-a">
+               <a href="#" class="social-a tw"></a>
+               <a href="#" class="social-a fb"></a>
+               <a href="#" class="social-a ut"></a>
             </div>
-            <div class="footer-copyright">
+            <div class="footer-copyright-a">
                 <p>website by</p>
-                <a href="" class="logo academy"></a>
+                <a href="" class="logo-a academy"></a>
             </div>
         </div>
       </footer>
@@ -120,20 +120,18 @@
                           <input class="enter-calender" type="text" name="text" id="data1" placeholder="24 апреля 2017">
                           <label for="data2">Дата выезда:</label>
                           <input class="exist-calender" type="text" name="text" id="data2" placeholder="4 июля 2017">
-                          <label for="senior">Взрослые: 
+                          <label for="senior">Взрослые: </label> 
                               <div class="plus">
                                 <button type="button">-</button>
                                 <input type="number" id="senior">
                                 <button type="button">+</button>
-                           </div>  
-                        </label>      
-                          <label for="child">Дети:
+                           </div>       
+                          <label for="child">Дети:</label>
                            <div class="minus">
                              <button type="button">-</button>
-                             <input  type="numder" id="child">
+                             <input  type="number" id="child">
                              <button type="button">+</button>
-                          </div> 
-                         </label>      
+                          </div>       
                           <button class="found" type="submit">Найти</button>
                 </form>
             </div>
