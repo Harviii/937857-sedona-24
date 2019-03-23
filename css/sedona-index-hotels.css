@@ -21,8 +21,7 @@ a {
 .img {
 	background-image: url("../img/b-p.jpg");
 	background-repeat: no-repeat;
-	height: 508px;
-	background-size: cover;
+	height: 509px;
 	background-color: #ad9386;
 }
 
@@ -352,6 +351,7 @@ a {
 .wholeform {
 	background-image: url(../img/filter%20background.jpg);
 	background-repeat: no-repeat;
+    background-color: darkblue;
 	width: 1200px;
 	min-height: 205px;
 	display: flex;
@@ -430,6 +430,11 @@ a {
 	margin-right: 40px;
 	font-size: 12px;
 	line-height: 18px;
+}
+
+.founding a {
+    height: 0;
+    margin-top: 35px;
 }
 
 .founding button {
@@ -613,6 +618,7 @@ a {
 
 .moreinfo {
 	display: inline-block;
+    vertical-align: middle;
 	min-width: 110px;
 	min-height: 28px;
 	background-color: #81b3d2;
@@ -749,15 +755,6 @@ a {
 	background-position: center;
 }
 
-.social-b:hover,
-.social-b:focus {
-	background-color: #669ec0;
-}
-
-.social-b:active {
-	background-color: #5496bd;
-}
-
 .tw:active {
 	background-image: url(../img/t2.svg);
 	background-repeat: no-repeat;
@@ -783,15 +780,6 @@ a {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 26px;
-}
-
-.logo-b {
-	display: inline-block;
-	width: 115px;
-	height: 50px;
-	background-color: white;
-	margin-top: 6px;
-	margin-left: -10px;
 }
 
 .academy {
@@ -967,6 +955,7 @@ a {
 
 .price-range label {
 	display: inline-block;
+    vertical-align: middle;
 	font-size: 14px;
 	line-height: 38px;
 	cursor: pointer;

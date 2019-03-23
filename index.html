@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="normalize.css" >
-    <link rel="stylesheet" type="text/css" href="css/sedona-index-hotels.css">
+    <link rel="stylesheet" type="text/css" href="css/sedona-index-hotels-compressed.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>City of Sedona</title>
   </head>
@@ -16,7 +16,7 @@
             <li><a href="">Фото и Видео</a></li>
             <li><a class="header-logo" href="index.html"><img src="img/logo.svg" width="140" height="72" alt="logo"></a></li>
             <li><a href="">Карта Штата</a></li>
-            <li><a href="">Гостиницы</a></li>
+            <li><a href="inner.html">Гостиницы</a></li>
           </ul>
         </div>
       </nav>
@@ -98,17 +98,15 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </h3>
         <button class="search" >Поиск гостиницы в Седоне</button>
-        <div class="map">
-          <img src="img/map.jpg" width="1200" height="595" alt="mapimg">
-        </div>
-      </section>
+        <img src="img/map.jpg" width="1200" height="595" alt="mapimg">  
+        </section>
       <footer class="main-footer">
         <div class="container">
           <p class="visit"><a href="">#VISITSEDONA</a></p>
           <div class="footer-social">
-            <a href="#" class="social tw"></a>
-            <a href="#" class="social fb"></a>
-            <a href="#" class="social ut"></a>
+            <a href="#" class="social tw" title="twiterbtn"></a>
+            <a href="#" class="social fb" title="facebookbtn"></a>
+            <a href="#" class="social ut" title="youtubebtn"></a>
           </div>
           <div class="footer-copyright">
             <p>website by</p>
@@ -123,12 +121,10 @@
             <form  action="http://echo.htmlacademy.ru" method="post">
               <label for="data1">Дата заезда:</label> 
               <input class="enter" type="text" name="text" id="data1" placeholder="24 апреля 2017">
-              <button class="enter-calender"><img src="img/calendar.svg"
-                  width="21" height="22" alt="calendarimg"></button>      
+              <button class="enter-calender image"></button>      
               <label for="data2">Дата выезда:</label> 
               <input class="exist" type="text" name="text" id="data2" placeholder="4 июля 2017">
-              <button class="exist-calender"><img src="img/calendar.svg"
-              width="21" height="22" alt="calendarimg"></button>     
+              <button class="exist-calender image"></button>     
               <label for="senior">Взрослые: </label> 
               <div class="plus">
                 <button type="button">-</button>
@@ -147,6 +143,6 @@
         </div>
       </section>
     </main>
-      <script src="js/script.js"></script>
+      <script src="js/scriptcompressed.js"></script>
   </body>
 </html>
