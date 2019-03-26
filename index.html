@@ -98,15 +98,17 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </h3>
         <button class="search" >Поиск гостиницы в Седоне</button>
-        <img src="img/map.jpg" width="1200" height="595" alt="mapimg">  
+        <img src="img/map.jpg" width="1200" height="595" alt="mapimg"> 
+        <a class="callmap" href="map.html"></a>
+        <iframe class="map" src="https://maps.google.com/maps?width=100%&amp;height=500&amp;hl=en&amp;q=Sedona+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" width="500" height="400"></iframe>  
         </section>
       <footer class="main-footer">
         <div class="container">
           <p class="visit"><a href="">#VISITSEDONA</a></p>
           <div class="footer-social">
-            <a href="#" class="social tw" title="twiterbtn"></a>
-            <a href="#" class="social fb" title="facebookbtn"></a>
-            <a href="#" class="social ut" title="youtubebtn"></a>
+            <a href="#" class="social tw" aria-label="twiterbtn"></a>
+            <a href="#" class="social fb" aria-label="facebookbtn"></a>
+            <a href="#" class="social ut" aria-lable="youtubebtn"></a>
           </div>
           <div class="footer-copyright">
             <p>website by</p>
@@ -127,15 +129,15 @@
               <button class="exist-calender image"></button>     
               <label for="senior">Взрослые: </label> 
               <div class="plus">
-                <button type="button">-</button>
-                <input type="number" id="senior">
-                <button type="button">+</button>
+                  <button class="minus-span" type="button"></button>
+                  <div class="input"><input type="number" id="senior"></div>
+                  <button class="plus-span" type="button"></button>
               </div>
               <label class="child" for="child">Дети:</label>
               <div class="minus">
-                <button type="button">-</button>
-                <input  type="number" id="child">
-                <button type="button">+</button>
+                  <button  class="minus-span a "type="button"></button>
+                  <div class="input"><input  type="number" id="child"></div>
+                <button class="plus-span b" type="button"></button>
               </div>
               <button class="found" type="submit">Найти</button>
             </form>

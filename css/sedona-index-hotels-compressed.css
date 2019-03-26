@@ -3,7 +3,7 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	letter-spacing: 0;
 	margin: 0 auto;
 	-webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
@@ -45,9 +45,6 @@ a {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -57,7 +54,7 @@ a {
 }
 
 .cite-navigation li:not(:nth-child(3)) {
-	padding-bottom: 25px
+	padding-top: 15px
 }
 
 .cite-navigation a:focus,
@@ -81,7 +78,7 @@ a {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
-	margin: 59px 380px 0
+	margin: 59px 375px 0
 }
 
 .description-of-sedona h3 {
@@ -227,7 +224,6 @@ a {
 	text-transform: uppercase;
 	border: none;
 	font-weight: 700;
-	font-family: "PT Sans", "Arial"", sans-serif;
 	padding: 30px 0
 }
 
@@ -241,14 +237,50 @@ a {
 	color: #857871
 }
 
+.interest img  {
+    position: relative;
+} 
+
+.callmap {
+	position: absolute;
+	top: 2172px;
+	left: 1250px;
+	width: 22px;
+	height: 22px;
+	background-color: #cbdda9;
+	border: 1px solid #baca9b;
+	-webkit-box-shadow: 0 3px 10px rgba(0, 1, 1, .3);
+	box-shadow: 0 3px 10px rgba(0, 1, 1, .3);
+	cursor: pointer
+}
+
+.map {
+	position: relative;
+	top: -575px;
+	left: 675px;
+	z-index: 2;
+	display: none
+}
+
+.map-show {
+	display: block;
+	-webkit-animation-name: map;
+	animation-name: map;
+	-webkit-animation-duration: 0.2s;
+	animation-duration: 0.2s
+}
+
 .popup {
 	position: absolute;
 	left: 50%;
 	top: 2172px;
+	z-index: 3;
 	width: 570px;
 	min-height: 395px;
 	font-weight: 700;
 	background-color: #fff;
+	-webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
+	box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
 	display: none;
 	margin-left: -285px
 }
@@ -332,9 +364,9 @@ a {
 .minus,
 .plus {
 	display: inline-block;
-	margin: 0;
 	margin-left: 20px;
-	vertical-align: middle
+	vertical-align: middle;
+	height: 38px
 }
 
 .minus {
@@ -352,6 +384,62 @@ a {
 	cursor: pointer
 }
 
+.minus-span::before,
+.minus-span::after,
+.plus-span::before,
+.plus-span::after {
+	content: "";
+	position: absolute;
+	top: 215px;
+	width: 12px;
+	height: 3px;
+	background-color: #a9a9a9
+}
+
+.minus-span::before,
+.minus-span::after {
+    left: 180px;
+}
+
+.plus-span::before,
+.plus-span::after {
+    left: 255px
+}
+
+.a::before,
+.a::after {
+    left: 410px
+}
+
+.b::before,
+.b::after {
+    left: 485px
+}
+
+.plus-span::after {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg)
+}
+
+.minus-span:hover::before,
+.minus-span:hover::after,
+.minus-span:focus::before,
+.minus-span:focus::after,
+.plus-span:hover::before,
+.plus-span:hover::after,
+.plus-span:focus::before,
+.plus-span:focus::after{
+    background-color: black
+}
+
+.minus-span:active::before,
+.minus-span:active::after,
+.plus-span:active::before,
+.plus-span:active::after {
+    background-color: #88b7d5;
+}
+
 .minus input,
 .plus input {
 	width: 38px;
@@ -359,6 +447,11 @@ a {
 	background-color: #f2f2f2;
 	border: none;
 	margin-right: -4px
+}
+
+.input {
+	display: inline-block;
+	vertical-align: top
 }
 
 .child {
@@ -510,8 +603,8 @@ a {
 .founding a {
 	height: 0;
 	margin-top: 30px;
-    margin-right: 30px;
-    font-weight: 400;
+	margin-right: 30px;
+	font-weight: 400;
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: underline;
@@ -520,7 +613,7 @@ a {
 	-webkit-text-decoration-color: #669ec0;
 	text-decoration-color: #669ec0;
 	text-transform: uppercase;
-    cursor: pointer
+	cursor: pointer
 }
 
 .founding a:not(.activebtn) {
@@ -638,23 +731,24 @@ a {
 	display: -ms-flexbox;
 	display: flex;
 	width: 350px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: center;
 	min-height: 90px
 }
 
 .name-hotel h3 {
 	font-size: 21px;
-	font-family: "PT Sans", Arial, sans-serif;
-	margin: 0
+	font-family: "PT Sans", "Arial", sans-serif;
+	margin: 0;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap
 }
 
 .name-hotel p {
@@ -664,7 +758,8 @@ a {
 	width: 240px;
 	font-weight: 400;
 	line-height: 21px;
-	margin: 0
+	margin: 0;
+	margin-top: 7px
 }
 
 .name-hotel p span {
@@ -672,8 +767,8 @@ a {
 	width: 50%
 }
 
-.name-hotel a:focus,
-.name-hotel a:hover {
+.name-hotel a:focus:not(.moreinfo):not(.reserv),
+.name-hotel a:hover:not(.moreinfo):not(.reserv) {
 	color: #81b3d2
 }
 
@@ -702,23 +797,22 @@ a {
 	height: 16px;
 	padding: 5px 13px 6px 16px;
 	font-weight: 400;
-	margin-top: 30px
-}
-
-.rate div {
-	margin-top: 27px
+	margin-top: 40px
 }
 
 .first-rate {
-	margin-left: 40px
+	margin-left: 40px;
+	margin-top: 20px
 }
 
 .second-rate {
-	margin-left: 60px
+	margin-left: 60px;
+	margin-top: 17px
 }
 
 .third-rate {
-	margin-left: 80px
+	margin-left: 80px;
+	margin-top: 17px
 }
 
 .moreinfo {
@@ -729,27 +823,28 @@ a {
 	color: #fff;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
-    line-height: 21px;
+	line-height: 21px;
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-right: 3px;
-    cursor: pointer
+	cursor: pointer
 }
 
 .moreinfo:focus,
 .moreinfo:hover {
-	background-color: #669ec0
+	background-color: #669ec0;
+	color: #fff
 }
 
 .moreinfo:active {
 	background-color: #5496bd;
-	color: #88b6d1
+	color: #7aadcb
 }
 
 .reserv {
 	display: inline-block;
 	vertical-align: middle;
-    padding: 3px 17px;
+	padding: 3px 17px;
 	background-color: #766357;
 	color: #fff;
 	font-size: 14px;
@@ -759,12 +854,13 @@ a {
 	cursor: pointer
 }
 
-.reserv:focus,
-.reserv:hover {
-	background-color: #604e43
+.reserv:hover,
+.reserv:focus {
+	background-color: #604e43;
+	color: #fff
 }
 
-.reserv:active {
+.reserv:active:not(.moreinfo) {
 	background-color: #503e33;
 	color: #857871
 }
@@ -945,14 +1041,16 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin: 0 auto;
 	width: 465px;
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
-	flex-direction: row
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: center
 }
 
 .popup-show {
@@ -1107,13 +1205,43 @@ a {
 	}
 }
 
+@-webkit-keyframes map {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0)
+	}
+	50% {
+		-webkit-transform: scale(.5);
+		transform: scale(.5)
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes map {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0)
+	}
+	50% {
+		-webkit-transform: scale(.5);
+		transform: scale(.5)
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
 .action {
 	position: relative;
 	padding-left: 42px;
 	cursor: pointer
 }
 
-.action input[type=checkbox]:checked+.checkbox {
+.action input[type=checkbox]:checked + .checkbox {
 	position: absolute;
 	width: 25px;
 	height: 25px;
@@ -1123,7 +1251,7 @@ a {
 	top: -5px
 }
 
-.action input[type=checkbox]+.checkbox {
+.action input[type=checkbox] + .checkbox {
 	position: absolute;
 	width: 25px;
 	height: 25px;
