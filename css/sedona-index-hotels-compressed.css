@@ -259,6 +259,7 @@ a {
 	top: -575px;
 	left: 675px;
 	z-index: 2;
+    border: none;
 	display: none
 }
 
